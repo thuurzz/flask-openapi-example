@@ -17,13 +17,13 @@ def hello_world():
     tags:
         - Health
     security: []
-    responses:
+    responses: 
       200:
         description: API está saudável
       400:
         description: Houve um erro
     """
-    return jsonify({"status": 'ok'})
+    return jsonify({"status": 'ok'}),200
 
 if __name__ == "__main__":
     app.run(debug=True)

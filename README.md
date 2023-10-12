@@ -1,4 +1,4 @@
-# API de Clientes
+# API de Clientes com Flask
 
 Bem-vindo ao repositório da API de Clientes! Este projeto é uma aplicação web desenvolvida usando Python, Flask, SQLAlchemy, Flask-RESTful, Flasgger e autenticação JWT. É destinado a fornecer um sistema robusto e eficiente para gerenciar clientes.
 
