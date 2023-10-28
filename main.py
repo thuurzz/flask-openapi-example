@@ -4,7 +4,9 @@ from flasgger import Swagger
 app = Flask(__name__)
 
 app.config['SWAGGER'] = {
-    'openapi': '3.0.2'
+    'openapi': '3.0.2',
+    'uiversion': 3,
+    'specs_route': '/swagger-ui/index.html',
 }
 
 swagger = Swagger(app, template_file='openapi.yaml')
@@ -26,4 +28,5 @@ def hello_world():
     return jsonify({"status": 'ok'}),200
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
+
